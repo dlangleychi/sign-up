@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="content">
+        <div class="logo-side">
+            <div class="label-div">
+                <img src="images/odin-lined.png" alt="odin logo">
+                <h1>ODIN</h1>
+            </div>
+            <div class="credit-div">
+                <p>Photo by <a href="https://unsplash.com/s/photos/annie-spratt" target="_blank">Annie Spratt</a> 
+                    on <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+            </div>
+        </div>
+        <div class="form-side">
+            <div class="hero">
+                <p>
+                    This is not a real online service! You know you need something like 
+                    this in your life to help you realize your deepest dreams.
+                    Sign up <em>now</em> to get started.
+                </p>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
+            </div>
+            <div class="form-div">
+                <form id="form" action="" method="get">
+                    <div class="form-heading">
+                        <h3>Let's do this!</h3>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-widget">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="form-widget">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-widget">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-widget">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" name="phone-number" id="phone-number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-widget">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password">
+                            <span></span>
+                            <!-- <span></span> -->
+                        </div>
+                        <div class="form-widget">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-password">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="button-div">
+                <input type="submit" form="form" value="Create Account">
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

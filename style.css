@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+body {
+    height: 100vh;
+    background-color: #596c68;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 70%;
+    width: 100%;
+
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.logo-side {
+    flex: 1 1 40%;
+    height: 100%;
+    /* background-color: purple; */
+    background-image: url(images/annie-spratt-t61ffOYIn-Q-unsplash.jpg);
+    background-size: cover;
+
+    position: relative;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: left;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    
+    border: 1px solid #D6D9DC;
+    background-color: #F6F7F8;
+    position: relative;
+    box-shadow: 0 1px 8px 1px grey;
+}
+
+.form-heading {
+    margin: 10px 20px;
+    font-size: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.form-row:last-of-type {
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    margin-bottom: 10px;
+}
+
+.form-widget {
+    height: 90px;
+    padding: 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.form-widget input {
+
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    position: relative;
+}
+
+.form-widget input:focus {
+    border-color: blue;
+    outline: none;
+    box-shadow: 1px 1px 5px 1px lightblue;
+}
+
+.form-widget input:invalid {
+    border-color: red;
+}
+
+input.mismatch {
+    border-color: red;
+}
+
+input.mismatch + span::after {
+    content: '*Passwords do not match';
+    font-size: 0.7rem;
+    color: red;
+}
+
+.form-widget label {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.button-div input, p {
+    margin: 20px 20px;
+}
+
+.button-div input {
+    color: white;
+    padding: 10px 24px;
+    background-color: rgb(152, 59, 59);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-div a {
+    text-decoration: none;
+    color: rgb(152, 59, 59);
+}
+
+.label-div {
+    background-color: rgba(186, 143, 159, 0.3);
+    padding: 20px;
+    margin-top: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-div img {
+    width: 100px;
+    height: 100px;
+}
+
+@font-face {
+    font-family: "Trushdex";
+    src: url(fonts/Trushdex.ttf);
+}
+
+.label-div h1 {
+    color: white;
+    font-size: 80px;
+    font-family: Trushdex, sans-serif; 
+    /* , url(fonts/Trushdex.ttf); */
+}
+
+.credit-div {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.credit-div p, .credit-div p a {
+    color: white;
+}
+
+
+
+.form-side {
+    flex: 1 1 60%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.hero, .form-div, .button-div {
+    flex: 1 1 33%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+
+.form-left, .form-right {
+    flex: 1 1 50%;
+    height: 100%;
+}
