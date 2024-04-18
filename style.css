@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 }
 
 .content {
-    height: 70%;
+    min-height: 70%;
     width: 100%;
 
     display: flex;
@@ -27,7 +27,6 @@ body {
 .logo-side {
     flex: 1 1 40%;
     height: 100%;
-    /* background-color: purple; */
     background-image: url(images/annie-spratt-t61ffOYIn-Q-unsplash.jpg);
     background-size: cover;
 
@@ -188,7 +187,7 @@ input.mismatch + span::after {
 
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: center;
     align-items: center;
 }
 
